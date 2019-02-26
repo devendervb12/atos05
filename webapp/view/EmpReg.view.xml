@@ -1,0 +1,38 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="Employee Registration Form">
+				<content>
+					<form:SimpleForm>
+						<form:title>
+							<core:Title text="Please Enter Employee Details"/>
+						</form:title>
+						
+						<form:content>
+							<Label text="Name"/>
+							<Input value="Devender"/>
+							<Label text="Department"/>
+							<ComboBox>
+								<items>
+									<core:Item text="SAP"/>
+									<core:Item text="Oracle"/>
+									<core:Item text="Baan"/>
+									<core:Item text="CRM"/>
+								</items>
+							</ComboBox>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+				<footer>
+					<Bar>
+						<contentLeft>
+							<Button text="REgister"/>
+						</contentLeft>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+	
+</mvc:View>
